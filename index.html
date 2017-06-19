@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mad Libs</title>
+
+	<link rel="stylesheet" href="madlibs.css">
+</head>
+<body>
+	<h1 id = "title">Mad Libs</h1>
+	<p id = "help">Type in a word in the text boxes then press Create Story to create your story.</p>
+	<form>
+		<ol>
+			<li><input id="word1" name="word1" type="text" value="Name">
+			<input id="word2" name="word2" type="text" value="Random Word">
+			<input id="word3" name="word3" type="text" value="Day of the Week"></li>
+			<li><input id="word4" name="word4" type="text" value="Time">
+			<input id="word5" name="word5" type="text" value="Drink">
+			<input id="word6" name="word6" type="text" value="Food"></li>
+			<li><input id="word7" name="word7" type="text" value="Name">
+			<input id="word8" name="word8" type="text" value="Adjective">
+			<input id="word9" name="word9" type="text" value="Verb"><li>
+			<li><input id="word10" name="word10" type="text" value="Noun">
+			<input id="word11" name="word11" type="text" value="Ammount of Money">
+			<input id="word12" name="word12" type="text" value="place"></li>
+			<li><input id="word13" name="word13" type="text" value="Adjective">
+			<input id="word14" name="word14" type="text" value="Ammount of Time">
+			<input id="word15" name="word15" type="text" value="Exclamation"></li>
+			<li><input id="word16" name="word16" type="text" value="Song Title"></li>
+		</ol>
+	</form>
+	<form id="button">
+		<input id="btn" name="submit" type="button" value="Create Story">
+	</form>
+	<h2 id=storyTitle>Your story's title wil be here</h2>
+	<p id="story">And your story will be created here</p>
+</body>
+<script>
+	var title = document.getElementById("storyTitle");
+	var btn = document.getElementById("btn");
+	var story = document.getElementById("story");
+	var word1 = document.getElementById("word1");
+	var word2 = document.getElementById("word2");
+	var word3 = document.getElementById("word3");
+	var word4 = document.getElementById("word4");
+	var word5 = document.getElementById("word5");
+	var word6 = document.getElementById("word6");
+	var word7 = document.getElementById("word7");
+	var word8 = document.getElementById("word8");
+	var word9 = document.getElementById("word9");
+	var word10 = document.getElementById("word10");
+	var word11 = document.getElementById("word11");
+	var word12 = document.getElementById("word12");
+	var word13 = document.getElementById("word13");
+	var word14 = document.getElementById("word14");
+	var word15 = document.getElementById("word15");
+	var word16 = document.getElementById("word16");
+
+
+	btn.onclick = function() {
+		storyTitle.innerHTML = "Detective " + word1.value + " and the " + word2.value + " case";
+		story.innerHTML = word3.value + ", " + word4.value + ". I was in my office, drinking a glass of " + word5.value + " and chowing down on some " + word6.value + " when she appeared. Her name was " + word7.value + " and she was very " + word8.value + ". She said, 'Detective, I need your help, she said " + word9.value + ", my " + word10.value + " is missing.' Of course I offered to help her for a low service fee of " + word11.value + ". We travelled to the " + word12.value + " where she last saw her missing " + word10.value + " and with my " + word13.value + " detetive skills, found it in only " + word14.value + ". '" + word15.value + "! You found it!' she screamed. 'You are welcome' I said, and went off back to my office, whistling the song " + word16.value + " to myself. I wonder what tommorow's case will be?";
+	}
+
+</script>
+</html>

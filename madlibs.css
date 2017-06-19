@@ -1,0 +1,73 @@
+* {
+	margin:0;
+	padding: 0;
+	font-family: courier;
+}
+
+body {
+	background-color:  grey;
+	color: white;
+	margin: 10px;
+}
+
+h1 {
+	background: url("pics/paper.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center;
+	margin-top: 10px;
+	color: black;
+	padding: 5px;
+	height: 40px;
+	width:30%;
+	border: 3px solid black;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#help {
+	border: 1px solid black;
+	padding: 5px;
+	width: 30%;
+	background-color: white;
+	color: grey;
+	margin: 0 auto;
+	margin-top: 8px;
+}
+
+ol {
+	text-align: center;
+	margin: 5px;
+}
+
+#button {
+	text-align: center;
+}
+
+h2 {
+	background: url("pics/paper.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-position: center;
+	margin-top: 10px;
+	color: black;
+	padding: 5px;
+	height: 40px;
+	width:50%;
+	border: 3px solid black;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+#story {
+	margin-top: 5px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: white;
+	color: grey;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 5px;
+	padding: 5px;
+}
